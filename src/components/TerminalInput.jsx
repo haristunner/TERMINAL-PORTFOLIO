@@ -24,7 +24,7 @@ const TerminalInput = forwardRef(
     const handleSubmit = (e) => {
       e.preventDefault();
 
-      let value = data?.input_text.trim();
+      let value = data?.input_text.trim().toLowerCase() ?? "";
 
       if (value === "") {
         return;
