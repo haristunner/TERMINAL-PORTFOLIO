@@ -3,7 +3,7 @@ import { GITHUB_URL, LINKEDIN_URL } from "./index";
 
 const MOTD_OUTPUT = `
       <p class="sm_txt">
-          Welcome to <a href="" class="sm_link"></a>
+          Welcome to <a href="https://hariprasath10.netlify.app/" class="sm_link">https://hariprasath10.netlify.app/</a>
         </p>
         <br />
         <p class="sm_txt">
@@ -69,7 +69,6 @@ const ABOUT_OUTPUT = `<p class="sm_txt">Hello, root!</p>
           professional web developer and user interface designer with a keen eye
           for detail and a determination to deliver the highest quality. I am
           <span class="sm_txt_bold">
-            {" "}
             motivated, enthusiastic, and well-organized
           </span>
           , primarily focused on user interfaces.
