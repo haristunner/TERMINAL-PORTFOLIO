@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Marcellus&display=swap");
+
+:root {
+  --bg-color: #252525;
+  --primary-text-color: #fff;
+  --secondary-text-color: #d5d5d5;
+  --sm-font-size: 0.875rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
