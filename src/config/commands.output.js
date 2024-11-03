@@ -3,18 +3,18 @@ import { GITHUB_URL, LINKEDIN_URL } from "./index";
 
 const MOTD_OUTPUT = `
       <p class="sm_txt">
-          Welcome to <a href="https://hariprasath10.netlify.app/" class="sm_link">https://hariprasath10.netlify.app/</a>
+          Welcome to <a href="https://hariprasath10.netlify.app/" target="_blank" class="sm_link">https://hariprasath10.netlify.app/</a>
         </p>
         <br />
         <p class="sm_txt">
           Github:
-          <a href=${GITHUB_URL} class="sm_link">
+          <a href=${GITHUB_URL} class="sm_link" target="_blank">
             ${GITHUB_URL}
           </a>
         </p>
         <p class="sm_txt">
           LinkedIn:
-          <a href=${LINKEDIN_URL} class="sm_link">
+          <a href=${LINKEDIN_URL} class="sm_link" target="_blank">
             ${LINKEDIN_URL}
           </a>
         </p>
@@ -93,21 +93,21 @@ const EDUCATION_OUTPUT = `<p class="sm_txt_bold">Government college of Engineeri
         <br />`;
 
 const EMAIL_OUTPUT = `<p class="sm_txt">
-          <a href="mailto:hari17prasathb@gmail.com" class="sm_link">
+          <a href="mailto:hari17prasathb@gmail.com" class="sm_link" target="_blank">
             hari17prasathb@gmail.com
           </a>
         </p>
         <br />`;
 
 const GITHUB_OUTPUT = `<p class="sm_txt">
-        <a href=${GITHUB_URL} class="sm_link">
+        <a href=${GITHUB_URL} class="sm_link" target="_blank">
          ${GITHUB_URL}
         </a>
       </p>
       <br />`;
 
 const LINKEDIN_OUTPUT = `<p class="sm_txt">
-                <a href=${LINKEDIN_URL} class="sm_link">
+                <a href=${LINKEDIN_URL} class="sm_link" target="_blank">
                  ${LINKEDIN_URL}
                 </a>
               </p>
@@ -119,7 +119,7 @@ const LOVE_OUTPUT = `<p class="sm_txt">
             <br />`;
 
 const PHONE_OUTPUT = `<p class="sm_txt">
-            <a href="tel:7904659339" class="sm_link">
+            <a href="tel:7904659339" class="sm_link" target="_blank">
              +91-7904659339
             </a>
           </p>
