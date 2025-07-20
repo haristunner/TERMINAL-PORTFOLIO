@@ -20,11 +20,7 @@ jobs:
       run: echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
 
     - name: Building the Image
-      run: |
-       docker build -t "${{secrets.DOCKER_USERNAME}}"/terminal_portfolio:latest .
-       docker tag "${{secrets.DOCKER_USERNAME}}"/terminal_portfolio:latest "${{secrets.DOCKER_USERNAME}}"/terminal_portfolio:${{env.SHORT_SHA}}
+      run: docker build -t "${{secrets.DOCKER_USERNAME}}"/terminal_portfolio:${{env.SHORT_SHA}} .
 
     - name: Push the image to Docker Hub
-      run: |
-        docker push "${{secrets.DOCKER_USERNAME}}"/terminal_portfolio:latest
-        docker push ${{ secrets.DOCKER_USERNAME }}terminal_portfolio:${{ env.SHORT_SHA }}
+      run: docker push ${{ secrets.DOCKER_USERNAME }}terminal_portfolio:${{ env.SHORT_SHA }}
